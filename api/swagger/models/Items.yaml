@@ -1,0 +1,18 @@
+type: object
+properties:
+  id:
+    type: [integer,"null"]
+  file_name:
+    type: [string,"null"]
+  file_size:
+    type: [string,integer,"null"]
+  processed:
+    type: [string,integer,"null"]
+  image:
+    type: [string,integer,"null"]
+  views:
+    type: [integer,"null"]
+  comments:
+    type: [string,"null"]
+  updated_at:
+    type: [string,"null"]

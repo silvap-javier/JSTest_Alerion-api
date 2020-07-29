@@ -1,0 +1,72 @@
+items:
+  x-swagger-router-controller: items
+  get:
+    description: Get plans for filter
+    operationId: getAll
+    parameters:
+      - name: guid
+        in: query
+        type: string
+      - name: name
+        in: query
+        type: string
+    responses:
+      "200":
+        description: Success
+        schema:
+          type: object
+          properties:
+            status:
+              type: string
+            data:
+              type: array
+      default:
+        description: Error
+        schema:
+          $ref: "#/definitions/ErrorResponse"
+  post:
+    description: Create images
+    operationId: post
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: "#/definitions/Items"
+    responses:
+      "200":
+        description: Success
+        schema:
+          type: object
+          properties:
+            status:
+              type: string
+            data:
+              type: object
+      default:
+        description: Error
+        schema:
+          $ref: "#/definitions/ErrorResponse"
+  put:
+    description: Update Items
+    operationId: put
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: "#/definitions/Items"
+    responses:
+      "200":
+        description: Success
+        schema:
+          type: object
+          properties:
+            status:
+              type: string
+            data:
+              type: object
+      default:
+        description: Error
+        schema:
+          $ref: "#/definitions/ErrorResponse"

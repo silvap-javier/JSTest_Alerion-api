@@ -1,0 +1,45 @@
+{
+  "name": "api-base",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Node Api Base",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "@chezearth/swagger": "^0.7.6",
+    "asyncawait": "^3.0.0",
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.15.2",
+    "hashids": "^2.0.1",
+    "json-refs": "^3.0.13",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "mysql-migrations": "^1.0.6",
+    "nodemon": "^1.19.2",
+    "pdfkit": "^0.10.0",
+    "rate-limiter-flexible": "^2.1.3",
+    "redis": "^2.8.0",
+    "swagger-express-mw": "^0.1.0",
+    "swagger-tools": "^0.10.3",
+    "swagger-ui-express": "^4.0.7",
+    "uuid": "^3.3.3",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "start": "npm install && nodemon app.js --ignore 'node_modules/*'",
+    "dev": "swagger project start",
+    "validate": "swagger validate api/swagger/swagger.yaml",
+    "test": "swagger project test"
+  }
+}
