@@ -5,9 +5,9 @@ properties:
   file_name:
     type: [string,"null"]
   file_size:
-    type: [string,integer,"null"]
+    type: [string,integer,number,"null"]
   processed:
-    type: [string,integer,"null"]
+    type: [string,integer,boolean,"null"]
   image:
     type: [string,integer,"null"]
   views:
